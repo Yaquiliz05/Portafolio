@@ -1,0 +1,50 @@
+.footer {
+  background-color: #111827;
+  padding: 20px 40px;
+  text-align: center;
+  position: relative;
+  margin-top: 40px;
+  font-family: 'Italiana', sans-serif;
+  border-radius: 12px;
+  overflow: hidden;
+  box-shadow: 0 0 12px rgba(100, 100, 255, 0.2);
+}
+
+.footer::before {
+  content: '';
+  position: absolute;
+  top: -2px;
+  left: -2px;
+  right: -2px;
+  bottom: -2px;
+  background: linear-gradient(
+    45deg,
+    #965dbe,
+    #67a9a9,
+    #a664e4,
+    #8abebf
+  );
+  z-index: -1;
+  filter: blur(12px);
+  animation: neonFooterGlow 8s linear infinite;
+  background-size: 300% 300%;
+  border-radius: 14px;
+}
+
+@keyframes neonFooterGlow {
+  0% {
+    background-position: 0% 50%;
+  }
+  50% {
+    background-position: 100% 50%;
+  }
+  100% {
+    background-position: 0% 50%;
+  }
+}
+
+.footer-text {
+  color: #d1c4ff;
+  font-size: 1rem;
+  text-shadow: 0 0 4px #a78bfa;
+}

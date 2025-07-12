@@ -1,0 +1,98 @@
+/* Estilos para AsideCarousel */
+.aside-carousel {
+  display: flex;
+  gap: 30px;
+  overflow-x: auto;
+  scroll-behavior: smooth;
+  padding: 40px 20px;
+  perspective: 1000px;
+  background-color: #0d0d0d;
+  border-radius: 20px;
+  scrollbar-width: none; /* Firefox */
+}
+
+.aside-carousel::-webkit-scrollbar {
+  display: none;
+}
+
+.card {
+  flex: 0 0 auto;
+  width: 250px;
+  background: rgba(255, 255, 255, 0.05);
+  border-radius: 16px;
+  padding: 20px;
+  text-align: center;
+  color: #fff;
+  transition: transform 0.3s ease;
+  box-shadow: 0 0 15px rgba(138, 43, 226, 0.4);
+  transform-style: preserve-3d;
+}
+
+.card:hover {
+  transform: rotateY(10deg) scale(1.05);
+}
+
+.card img {
+  width: 100%;
+  border-radius: 12px;
+  margin-bottom: 15px;
+}
+
+.card h4 {
+  font-size: 1.4rem;
+  margin: 10px 0;
+  color: #a78bfa;
+  text-shadow: 0 0 6px #8a2be2;
+  font-family: 'Italiana', sans-serif;
+}
+
+.card p {
+  font-size: 1rem;
+  color: #dcd0ff;
+  font-family: 'Segoe UI', sans-serif;
+  line-height: 1.5;
+}
+
+/* 🔽 Media Queries para hacerlo responsive */
+
+/* Tablets y pantallas medianas */
+@media (max-width: 768px) {
+  .aside-carousel {
+    padding: 30px 15px;
+    gap: 20px;
+  }
+
+  .card {
+    width: 200px;
+    padding: 16px;
+  }
+
+  .card h4 {
+    font-size: 1.2rem;
+  }
+
+  .card p {
+    font-size: 0.95rem;
+  }
+}
+
+/* Celulares */
+@media (max-width: 480px) {
+  .aside-carousel {
+    padding: 20px 10px;
+    gap: 15px;
+  }
+
+  .card {
+    width: 160px;
+    padding: 14px;
+  }
+
+  .card h4 {
+    font-size: 1.05rem;
+  }
+
+  .card p {
+    font-size: 0.9rem;
+  }
+}

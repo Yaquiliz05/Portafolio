@@ -1,3 +1,4 @@
+import { SocialLinks } from "../Social/SocialLinks";
 import "./MainSection.css";
 
 function MainSection({ maNombre, maParrafo }) {
@@ -11,6 +12,7 @@ function MainSection({ maNombre, maParrafo }) {
           </h2>
           <h2 className="main-section__nombre">{maNombre}</h2>
           <p className="main-section__descripcion">{maParrafo}</p>
+          < SocialLinks />
         </div>
 
         {/* Tarjeta lado derecho */}
@@ -22,7 +24,7 @@ function MainSection({ maNombre, maParrafo }) {
         </div>
       </div>
     </main>
-  );
+  )
 }
 
-export { MainSection };
+export { MainSection }

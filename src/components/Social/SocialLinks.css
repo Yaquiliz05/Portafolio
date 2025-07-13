@@ -1,0 +1,27 @@
+.social-links {
+  display: flex;
+  gap: 20px;
+  justify-content: left;
+  margin-top: 30px;
+}
+
+.social-link {
+  font-size: 2rem;
+  color: #ffffff;
+  text-decoration: none;
+  transition: transform 0.3s ease, color 0.3s ease;
+  filter: drop-shadow(0 0 10px #c29aeb);
+}
+
+.social-link:hover {
+  color: #ffffff;
+  transform: scale(1.2);
+  filter: drop-shadow(0 0 12px #d2a4ff);
+}
+
+/* ✅ Responsive: centrar en pantallas pequeñas */
+@media (max-width: 768px) {
+  .social-links {
+    justify-content: center;
+  }
+}

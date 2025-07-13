@@ -23,38 +23,40 @@ function App() {
     nombre: "Desarrollo Web",
     descripcion:
       "HTML, CSS, JavaScript, React, diseño responsivo y buenas prácticas de desarrollo.",
-    imagen: "URL-DE-TU-IMAGEN-DESARROLLO-WEB"
+    imagen: "https://i.postimg.cc/L82skjqX/Purple-White-Simple-Thank-You-Card.jpg"
   },
   {
     nombre: "Bases de Datos",
     descripcion:
       "MySQL, modelado entidad-relación, consultas complejas y procedimientos almacenados.",
-    imagen: "URL-DE-TU-IMAGEN-BASES-DATOS"
+    imagen: "https://i.postimg.cc/x81RbXKF/Purple-White-Simple-Thank-You-Card.png"
   },
   {
     nombre: "Diseño de Interfaces",
     descripcion:
       "UI/UX, accesibilidad, wireframes, diseño visual y prototipos interactivos.",
-    imagen: "URL-DE-TU-IMAGEN-UIUX"
+    imagen: "https://i.postimg.cc/zBX5jbsX/Purple-White-Simple-Thank-You-Card-3.png"
   },
   {
     nombre: "Redes y soporte técnico",
     descripcion:
       "Configuración de redes, mantenimiento de equipos y gestión de software.",
-    imagen: "URL-DE-TU-IMAGEN-REDES"
+    imagen: "https://i.postimg.cc/pL4qCg39/Purple-White-Simple-Thank-You-Card-5.png"
   },
   {
     nombre: "Lógica de programación",
     descripcion:
       "Solución de problemas con algoritmos, pseudocódigo, estructuras de control y datos.",
-    imagen: "URL-DE-TU-IMAGEN-LOGICA"
+    imagen: "https://i.postimg.cc/DZZksVGS/Purple-White-Simple-Thank-You-Card-4.png"
   },
-  {
-    nombre: "Ofimática y TICs Educativas",
-    descripcion:
-      "Herramientas digitales aplicadas a contextos educativos y administrativos.",
-    imagen: "URL-DE-TU-IMAGEN-TICS"
-  }
+ {
+  nombre: "Diseño Gráfico Digital",
+  descripcion: "Uso de Adobe Photoshop, Illustrator e InDesign para crear piezas visuales, interfaces y contenido gráfico.",
+  imagen: "https://i.postimg.cc/Z5pdk2Cv/Purple-White-Simple-Thank-You-Card-6.png"
+}
+
+
+
     ]
   const footer1 = '© 2025 Jaqueline Goicochea. Todos los derechos reservados.'
 

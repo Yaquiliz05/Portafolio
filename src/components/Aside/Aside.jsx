@@ -29,7 +29,7 @@ function Aside({ tecnologia }) {
 
   return (
     <aside className="aside-carousel">
-      <h3 className="aside-carousel__title">Tecnologías y habilidades</h3>
+      <h3 className="aside-carousel__title">Experiencia y habilidades técnicas</h3>
       <div className="aside-carousel__container">
         <button className="aside-carousel__arrow" onClick={handlePrev}>&lt;</button>
 

@@ -4,33 +4,34 @@
   padding: 60px 40px;
   background-color: transparent;
   display: flex;
-  justify-content: center;
+  flex-direction: column;
   align-items: center;
   font-family: 'PoiretOne', sans-serif;
 }
 
 .main-section__content {
   max-width: 1200px;
+  width: 100%;
   display: flex;
   justify-content: space-between;
-  align-items: flex-start;
-  gap: 40px;
+  align-items: center;
   flex-wrap: wrap;
+  gap: 40px;
 }
 
+/* Texto */
 .main-section__text {
   flex: 1;
   min-width: 300px;
+  margin: 0;
 }
 
-/* Título "Hola," con efecto parpadeante */
 .main-section__saludo {
   font-size: 2.8rem;
   margin: 0;
   line-height: 1;
 }
 
-/* Texto que brilla */
 .glow-text {
   color: #fff;
   animation: glowPulse 2s infinite;
@@ -39,18 +40,10 @@
 
 @keyframes glowPulse {
   0%, 100% {
-    text-shadow:
-      0 0 5px #c084fc,
-      0 0 10px #a855f7,
-      0 0 20px #9333ea,
-      0 0 30px #7e22ce;
+    text-shadow: 0 0 5px #c084fc, 0 0 10px #a855f7, 0 0 20px #9333ea, 0 0 30px #7e22ce;
   }
   50% {
-    text-shadow:
-      0 0 1px #c084fc,
-      0 0 2px #a855f7,
-      0 0 4px #9333ea,
-      0 0 6px #7e22ce;
+    text-shadow: 0 0 1px #c084fc, 0 0 2px #a855f7, 0 0 4px #9333ea, 0 0 6px #7e22ce;
   }
 }
 
@@ -68,12 +61,39 @@
   margin-bottom: 20px;
 }
 
-.main-section__card {
+/* Imagen */
+.main-section__image-wrapper {
+  flex: 1;
+  min-width: 300px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.main-section__image {
+  width: 100%;
+  max-width: 300px;
+  height: auto;
+  filter: drop-shadow(0 0 20px #c084fc);
+}
+
+/* Parte inferior */
+.main-section__bottom {
+  margin-top: 60px;
+  max-width: 1200px;
+  width: 100%;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 40px;
+  justify-content: space-between;
+}
+
+.main-section__card,
+.main-section__bio {
   flex: 1;
   min-width: 280px;
 }
 
-/* Tarjeta con efecto neón */
 .neon-card {
   background: rgba(192, 132, 252, 0.1);
   border: 1px solid rgba(192, 132, 252, 0.3);
@@ -89,26 +109,35 @@
   transform: scale(1.03);
 }
 
-.neon-card h3 {
+.neon-card h3,
+.main-section__bio h3 {
   color: #c084fc;
   margin-bottom: 10px;
   font-size: 1.4rem;
 }
 
-.neon-card p {
+.neon-card p,
+.main-section__bio p {
   color: #e0e0e0;
   font-size: 1rem;
 }
 
 /* Responsive */
 @media (max-width: 768px) {
-  .main-section__content {
+  .main-section__content,
+  .main-section__bottom {
     flex-direction: column;
     align-items: center;
   }
 
   .main-section__text,
-  .main-section__card {
+  .main-section__image-wrapper,
+  .main-section__card,
+  .main-section__bio {
     text-align: center;
+  }
+
+  .main-section__image {
+    max-width: 240px;
   }
 }

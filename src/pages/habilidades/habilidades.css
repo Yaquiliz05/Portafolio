@@ -1,0 +1,183 @@
+.habilidades {
+  padding: 3rem 1rem;
+  font-family: 'PoiretOne', sans-serif;
+  max-width: 1200px;
+  margin: 0 auto;
+  color: #fff;
+  text-align: center;
+
+}
+
+.habilidades__title {
+  font-size: 2.2rem;
+  margin-bottom: 2.5rem;
+  color: #e9d5ff;
+  text-shadow: 0 0 20px #a855f7, 0 0 40px #c084fc;
+  animation: fadeIn 1s ease-in-out;
+}
+
+.habilidades__grid {
+  display: flex;
+  gap: 2.5rem;
+  justify-content: center;
+  flex-wrap: wrap;
+  text-align: left;
+}
+
+.habilidades__categorias {
+  flex: 1;
+  min-width: 280px;
+  animation: slideLeft 1.2s ease forwards;
+}
+
+.habilidades__categoria {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+  margin-bottom: 1.5rem;
+  padding: 1rem;
+  border-radius: 12px;
+  background-color: rgba(50, 10, 70, 0.1);
+  box-shadow: 0 0 10px #c084fc30;
+  transition: background 0.3s ease, transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.habilidades__categoria:hover {
+  background-color: rgba(192, 132, 252, 0.12);
+  transform: translateY(-5px);
+  box-shadow: 0 0 15px #c084fc80, 0 0 30px #c084fc50;
+}
+
+.habilidades__icono {
+  font-size: 2rem;
+  color: #c084fc;
+  filter: drop-shadow(0 0 6px #c084fc80);
+  transition: transform 0.4s ease, filter 0.3s ease;
+}
+
+.habilidades__categoria:hover .habilidades__icono {
+  transform: scale(1.2) rotate(-10deg);
+  filter: drop-shadow(0 0 12px #c084fc);
+}
+
+.habilidades__nombre {
+  font-size: 1.1rem;
+  color: #e9d5ff;
+  text-shadow: 0 0 3px #c084fc;
+}
+
+.habilidades__tiempo {
+  font-size: 0.95rem;
+  color: #d4d4d4;
+  margin-top: 0.2rem;
+}
+
+/* BARRAS DE HABILIDAD ESTILO NEÓN */
+
+.habilidades__barras {
+  flex: 1;
+  min-width: 280px;
+  animation: slideRight 1.2s ease forwards;
+}
+
+.habilidades__barra {
+  margin-bottom: 1.7rem;
+  transition: transform 0.3s ease;
+}
+
+.habilidades__barra:hover {
+  transform: scale(1.03);
+}
+
+.habilidades__etiqueta {
+  display: flex;
+  justify-content: space-between;
+  font-size: 1rem;
+  margin-bottom: 0.4rem;
+  color: #f3f3f3;
+  text-shadow: 0 0 4px #f9f9f9;
+}
+
+.habilidades__track {
+  background: #1f1f1f;
+  height: 14px;
+  border-radius: 30px;
+  overflow: hidden;
+  position: relative;
+  box-shadow: 0 0 8px #000;
+}
+
+.habilidades__fill {
+  height: 100%;
+  background: linear-gradient(90deg, #a855f7, #c084fc, #a855f7);
+  background-size: 200% auto;
+  animation: shimmer 2.8s linear infinite;
+  border-radius: 30px 0 0 30px;
+  transition: width 1.5s ease, box-shadow 0.5s ease;
+  box-shadow: 0 0 20px #c084fc, 0 0 40px #a855f7;
+}
+
+/* ANIMACIONES */
+
+@keyframes shimmer {
+  0% {
+    background-position: 0% center;
+  }
+  100% {
+    background-position: -200% center;
+  }
+}
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+    transform: translateY(-10px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+@keyframes slideLeft {
+  from {
+    opacity: 0;
+    transform: translateX(-30px);
+  }
+  to {
+    opacity: 1;
+    transform: translateX(0);
+  }
+}
+
+@keyframes slideRight {
+  from {
+    opacity: 0;
+    transform: translateX(30px);
+  }
+  to {
+    opacity: 1;
+    transform: translateX(0);
+  }
+}
+
+/* RESPONSIVO */
+
+@media (max-width: 768px) {
+  .habilidades__grid {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .habilidades__title {
+    font-size: 1.8rem;
+  }
+
+  .habilidades__icono {
+    font-size: 1.6rem;
+  }
+
+  .habilidades__barra:hover {
+    transform: none;
+  }
+}

@@ -8,6 +8,7 @@ import { BrowserRouter as Router, Routes, Route } from 'react-router-dom'
 // Páginas adicionales
 import Proyectos from './pages/Proyectos/Proyectos.jsx'
 import Contacto from './pages/Contacto/Contacto.jsx'
+import { Habilidades } from './pages/habilidades/habilidades.jsx'
 
 function App() {
   const titulo = 'Jaqueline.dev'
@@ -70,6 +71,7 @@ function App() {
             <>
               <MainSection maNombre={maNombre} maParrafo={maParrafo} />
               <Aside tecnologia={tecnologia} />
+              < Habilidades/>
             </>
           }
         />

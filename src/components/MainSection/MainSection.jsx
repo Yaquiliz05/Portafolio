@@ -6,7 +6,7 @@ function MainSection({ maNombre, maParrafo }) {
     <main className="main-section">
       <div className="main-section__content">
 
-        {/* Lado izquierdo - Texto */}
+
         <div className="main-section__text">
           <h2 className="main-section__saludo">
             <span className="glow-text">Hola,</span>
@@ -16,7 +16,7 @@ function MainSection({ maNombre, maParrafo }) {
           <SocialLinks />
         </div>
 
-        {/* Lado derecho - Imagen */}
+
         <div className="main-section__image-wrapper">
           <img
             src="https://i.postimg.cc/XNDWtJ69/2.png"
@@ -26,7 +26,6 @@ function MainSection({ maNombre, maParrafo }) {
         </div>
       </div>
 
-      {/* Parte inferior - Tarjeta y descripción */}
       <div className="main-section__bottom">
         <div className="main-section__card neon-card">
           <h3>Innovación aplicada a la realidad</h3>

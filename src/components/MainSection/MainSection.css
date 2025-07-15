@@ -47,6 +47,22 @@
   }
 }
 
+/* Hover sobre saludo */
+.main-section__saludo:hover .glow-text {
+  animation: hoverGlow 1.2s infinite alternate;
+}
+
+@keyframes hoverGlow {
+  0% {
+    text-shadow: 0 0 8px #c084fc, 0 0 12px #a855f7, 0 0 20px #9333ea;
+    transform: scale(1);
+  }
+  100% {
+    text-shadow: 0 0 14px #c084fc, 0 0 20px #a855f7, 0 0 30px #9333ea;
+    transform: scale(1.05);
+  }
+}
+
 .main-section__nombre {
   font-size: 2.8rem;
   font-family: 'Italiana', serif;
@@ -75,6 +91,12 @@
   max-width: 300px;
   height: auto;
   filter: drop-shadow(0 0 20px #c084fc);
+  transition: transform 0.5s ease, filter 0.5s ease;
+}
+
+.main-section__image-wrapper:hover .main-section__image {
+  transform: scale(1.05) rotateZ(-2deg);
+  filter: drop-shadow(0 0 30px #c084fc);
 }
 
 /* Parte inferior */
